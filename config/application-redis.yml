@@ -8,7 +8,7 @@ spring:
         pool:
           max-active: 20
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/eb_demo
+    url: jdbc:postgresql://127.0.0.1:5432/easybuid
     username: postgres
     password: 123456
     type: com.zaxxer.hikari.HikariDataSource
@@ -44,8 +44,8 @@ mybatis-plus:
 easyfk:
   config:
     login:
-      #指定登录缓存类型 Redis,Database，默认Database
-      cache-type: Redis
+      #指定登录缓存类型 redis,database，默认database
+      cache-type: redis
     web:
       #跨域配置
       cors:
