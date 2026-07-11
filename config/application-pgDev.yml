@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/easybuid
+    url: jdbc:postgresql://127.0.0.1:5432/eb_demo
     username: postgres
     password: 123456
     type: com.zaxxer.hikari.HikariDataSource

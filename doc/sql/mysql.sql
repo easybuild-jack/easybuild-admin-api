@@ -100,7 +100,7 @@ CREATE TABLE `auth_employee` (
 
 LOCK TABLES `auth_employee` WRITE;
 /*!40000 ALTER TABLE `auth_employee` DISABLE KEYS */;
-INSERT INTO `auth_employee` VALUES ('985c55945a159fab0e4d634ad7919add','dev','开发专用',NULL,NULL,'10032586bc62852d2a7ed121da58d05f',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'596bf1f03e28b22d4f5c09963e0d8f21',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'platform',NULL,'2026-03-22 09:53:53','2026-03-22 09:54:31',0);
+INSERT INTO `auth_employee` VALUES ('e2a79a8e72f5fba172128cc65043b1f2','dev','开发专用',NULL,NULL,'10032586bc62852d2a7ed121da58d05f',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'873ced170e0b867c7a343cc738862355',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'platform',NULL,'2026-03-22 15:26:30.203111','2026-03-22 17:18:15.418484',0);
 /*!40000 ALTER TABLE `auth_employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -143,7 +143,72 @@ CREATE TABLE `auth_resource` (
 
 LOCK TABLES `auth_resource` WRITE;
 /*!40000 ALTER TABLE `auth_resource` DISABLE KEYS */;
-INSERT INTO `auth_resource` VALUES ('authManage','权限管理','',NULL,NULL,NULL,'权限管理','menu','权限管理',99000,'/auth',NULL,2,NULL,1,'authManage','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('bannerAddOrEdit','新增/编辑','','/api/bms/operation/banner/addOrEdit','bannerManage','Banner管理','新增/编辑','action','新增/编辑',18101,'','addOrEdit',2,'',0,'operationSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('bannerDelete','删除','','/api/bms/operation/banner/delete','bannerManage','Banner管理','删除','action','删除',18102,'','delete',2,'',0,'operationSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('bannerDisable','启用/禁用','','/api/bms/operation/banner/disable','bannerManage','Banner管理','启用/禁用','action','启用/禁用',18103,'','disable',2,'',0,'operationSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('bannerManage','Banner管理','','/api/bms/operation/banner/queryPage','operationSetting','运营管理','Banner管理','menu','Banner管理',18100,'/operation/banner','',2,'',0,'operationSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('baseSetting','基础设置','',NULL,NULL,NULL,'基础设置','menu','基础设置',98000,'/base',NULL,2,NULL,1,'baseSetting','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('brandAddOrEdit','新增/编辑','','/api/bms/base/brand/addOrEdit','brandManage','品牌管理','新增/编辑','action','新增/编辑',98201,'','addOrEdit',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('brandDelete','删除','','/api/bms/base/brand/delete','brandManage','品牌管理','删除','action','删除',98202,'','delete',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('brandDisable','启用/禁用','','/api/bms/base/brand/disable','brandManage','品牌管理','启用/禁用','action','启用/禁用',98203,'','disable',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('brandManage','品牌管理','','/api/bms/base/brand/queryPage','baseSetting','基础设置','品牌管理','menu','品牌管理',98200,'/base/brand','',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('businessesManage','商超管理','',NULL,NULL,NULL,'商超管理','menu','商超管理',71000,'/businesses',NULL,2,NULL,1,'businessesSetting','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('categoryAddOrEdit','新增/编辑','','/api/bms/base/category/addOrEdit','categoryManage','分类管理','新增/编辑','action','新增/编辑',98401,'','addOrEdit',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('categoryDelete','删除','','/api/bms/base/category/delete','categoryManage','分类管理','删除','action','删除',98402,'','delete',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('categoryDisable','启用/禁用','','/api/bms/base/category/disable','categoryManage','分类管理','启用/禁用','action','启用/禁用',98403,'','disable',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('categoryManage','分类管理','','/api/bms/base/category/queryPage','baseSetting','基础设置','分类管理','menu','分类管理',98400,'/base/category','',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('commodityManage','商品管理','',NULL,NULL,NULL,'商品管理','menu','商品管理',81000,'/commodity',NULL,2,NULL,1,'commodityManage','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('customerManage','会员管理','',NULL,NULL,NULL,'会员管理','menu','会员管理',81000,'/customer',NULL,2,NULL,1,'customerManage','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('departmentAddOrEdit','新增/编辑','','/api/auth/department/addOrEdit','departmentManage','部门管理','新增/编辑','action','新增/编辑',99101,'','addOrEdit',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('departmentDelete','删除部门','','/api/auth/department/delete','departmentManage','部门管理','删除','action','删除部门',99102,'','delete',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('departmentDisable','启用/禁用部门','','/api/auth/department/disable','departmentManage','部门管理','启用/禁用','action','启用/禁用部门',99102,'','disable',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('departmentManage','部门管理','','/api/auth/department/queryPage','authManage','权限管理','部门管理','menu','部门管理',99100,'/auth/department','',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('dictAddOrEdit','新增/编辑','','/api/bms/system/dict/addOrEdit','dictManage','字典管理','新增/编辑','action','新增/编辑',99401,'','addOrEdit',2,'',0,'systemSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('dictDelete','删除','','/api/bms/system/dict/delete','dictManage','字典管理','删除','action','删除',99402,'','delete',2,'',0,'systemSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('dictDisable','启用/禁用','','/api/bms/system/dict/disable','dictManage','字典管理','启用/禁用','action','启用/禁用',99403,'','disable',2,'',0,'systemSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('dictManage','字典管理','','/api/bms/system/dict/queryPage','systemSetting','系统设置','字典管理','menu','字典管理',99400,'/system/dict','',2,'',0,'systemSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('employeeAddOrEdit','新增/编辑员工','','/api/auth/employee/addOrEdit','employeeManage','员工管理','新增/编辑','action','新增/编辑员工',99301,'','addOrEdit',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('employeeDelete','删除员工','','/api/auth/employee/delete','employeeManage','员工管理','删除','action','删除员工',99302,'','delete',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('employeeDisable','启用/禁用员工','','/api/auth/employee/disable','employeeManage','员工管理','启用/禁用','action','启用/禁用员工',99303,'','disable',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('employeeManage','员工管理','','/api/auth/employee/queryPage','authManage','权限管理','员工管理','menu','员工管理',99300,'/auth/employee','',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsInfoAddOrEdit','新增/编辑','','/api/bms/commodity/goods/addOrEdit','goodsInfoManage','商品管理','新增/编辑','action','新增/编辑',11201,'','addOrEdit',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsInfoDelete','删除','','/api/bms/commodity/goods/delete','goodsInfoManage','商品管理','删除','action','删除',11202,'','delete',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsInfoManage','商品管理','','/api/bms/commodity/goods/queryPage','commodityManage','商品管理','商品管理','menu','商品管理',11200,'/commodity/goods','',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsInfoSaleFlag','商品上下架','','/api/bms/commodity/goods/saleFlag','goodsInfoManage','商品管理','商品上下架','action','商品上下架',11203,'','saleFlag',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsSpuConfigAddOrEdit','新增/编辑','','/api/bms/commodity/spu/addOrEdit','goodsSpuConfigManage','SPU配置','新增/编辑','action','新增/编辑',11101,'','addOrEdit',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsSpuConfigDelete','删除','','/api/bms/commodity/spu/delete','goodsSpuConfigManage','SPU配置','删除','action','删除',11102,'','delete',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('goodsSpuConfigManage','SPU配置','','/api/bms/commodity/spu/queryPage','commodityManage','商品管理','SPU配置','menu','SPU配置',11100,'/commodity/spu','',2,'',0,'commodityManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('groupAddOrEdit','新增/编辑','','/api/bms/base/group/addOrEdit','groupManage','分组管理','新增/编辑','action','新增/编辑',98301,'','addOrEdit',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('groupDelete','删除','','/api/bms/base/group/delete','groupManage','分组管理','删除','action','删除',98302,'','delete',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('groupDisable','启用/禁用','','/api/bms/base/group/disable','groupManage','分组管理','启用/禁用','action','启用/禁用',98303,'','disable',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('groupManage','分组管理','','/api/bms/base/group/queryPage','baseSetting','基础设置','分组管理','menu','分组管理',98300,'/base/group','',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('merchantAddOrEdit','新增/编辑','','/api/bms/businesses/merchant/addOrEdit','merchantManage','商户管理','新增/编辑','action','新增/编辑',71201,'','addOrEdit',2,'',0,'businessesSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('merchantDelete','删除','','/api/bms/businesses/merchant/delete','merchantManage','商户管理','删除','action','删除',71202,'','delete',2,'',0,'businessesSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('merchantDisable','启用/禁用','','/api/bms/businesses/merchant/disable','merchantManage','商户管理','启用/禁用','action','启用/禁用',71203,'','disable',2,'',0,'businessesSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('merchantManage','商户管理','','/api/bms/businesses/merchant/queryPage','businessesManage','商超管理','商户管理','menu','商户管理',71200,'/businesses/merchant','',2,'',0,'businessesSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('operationSetting','运营管理','',NULL,NULL,NULL,'运营管理','menu','运营管理',18000,'/operation',NULL,2,NULL,1,'operationSetting','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderInfoAddOrEdit','新增/编辑','','/api/bms/order/info/addOrEdit','orderInfoManage','订单管理','新增/编辑','action','新增/编辑',10101,'','addOrEdit',2,'',0,'orderManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderInfoDelete','删除','','/api/bms/order/info/delete','orderInfoManage','订单管理','删除','action','删除',10102,'','delete',2,'',0,'orderManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderInfoManage','订单管理','','/api/bms/order/info/queryPage','orderManage','订单管理','订单管理','menu','订单管理',10100,'/order/order','',2,'',0,'orderManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderManage','订单管理','',NULL,NULL,NULL,'订单管理','menu','订单管理',71000,'/order',NULL,2,NULL,1,'orderManage','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderRefundAddOrEdit','新增/编辑','','/api/bms/order/refund/addOrEdit','orderRefundManage','退款管理','新增/编辑','action','新增/编辑',10701,'','addOrEdit',2,'',0,'orderManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderRefundDelete','删除','','/api/bms/order/refund/delete','orderRefundManage','退款管理','删除','action','删除',10702,'','delete',2,'',0,'orderManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('orderRefundManage','退款管理','','/api/bms/order/refund/queryPage','orderManage','订单管理','退款管理','menu','退款管理',10700,'/order/refund','',2,'',0,'orderManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('roleAddOrEdit','新增/编辑角色','','/api/auth/role/addOrEdit','roleManage','角色管理','新增/编辑','action','新增/编辑角色',99201,'','addOrEdit',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('roleDelete','删除角色','','/api/auth/role/delete','roleManage','角色管理','删除','action','删除角色',99202,'','delete',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('roleDisable','启用/禁用角色','','/api/auth/role/disable','roleManage','角色管理','启用/禁用','action','启用/禁用角色',99203,'','disable',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('roleGrantResource','角色分配资源','','/api/auth/role/grant','roleManage','角色管理','分配资源','action','角色分配资源',99204,'','grant',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('roleManage','角色管理','','/api/auth/role/queryPage','authManage','权限管理','角色管理','menu','角色管理',99200,'/auth/role','',2,'',0,'authManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('systemSetting','系统设置','',NULL,NULL,NULL,'系统设置','menu','系统设置',99000,'/system',NULL,2,NULL,1,'systemSetting','all',NULL,'2026-03-22 09:54:00','2026-03-22 09:54:00',0),('tagAddOrEdit','新增/编辑','','/api/bms/base/tag/addOrEdit','tagManage','标签管理','新增/编辑','action','新增/编辑',98501,'','addOrEdit',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('tagDelete','批量删除','','/api/bms/base/tag/delete','tagManage','标签管理','批量删除','action','批量删除',98502,'','delete',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('tagDisable','启用/禁用','','/api/bms/base/tag/disable','tagManage','标签管理','启用/禁用','action','启用/禁用',98503,'','disable',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('tagManage','标签管理','','/api/bms/base/tag/queryPage','baseSetting','基础设置','标签管理','menu','标签管理',98500,'/base/tag','',2,'',0,'baseSetting','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('userInfoAddOrEdit','新增/编辑','','/api/bms/customer/user/addOrEdit','userInfoManage','会员管理','新增/编辑','action','新增/编辑',81101,'','addOrEdit',2,'',0,'customerManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('userInfoDelete','删除','','/api/bms/customer/user/delete','userInfoManage','会员管理','删除','action','删除',81102,'','delete',2,'',0,'customerManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('userInfoDisable','启用/禁用','','/api/bms/customer/user/disable','userInfoManage','会员管理','启用/禁用','action','启用/禁用',81103,'','disable',2,'',0,'customerManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0),('userInfoManage','用户管理','','/api/bms/customer/user/queryPage','customerManage','会员管理','用户管理','menu','用户管理',81100,'/customer/user','',2,'',0,'customerManage','all','all','2026-03-22 09:54:00','2026-03-22 09:54:00',0);
+INSERT INTO `auth_resource` VALUES ('orderInfoAddOrEdit', '新增/编辑', '', '/api/bms/order/info/addOrEdit', 'orderInfoManage', '订单管理', '新增/编辑', 'action', '新增/编辑', 10101, '', 'addOrEdit', 2, '', 0, 'orderManage', 'all', 'all', '2026-03-22 15:40:07.782007', '2026-03-22 17:11:25.381187', 0);
+INSERT INTO `auth_resource` VALUES ('departmentAddOrEdit', '新增/编辑', '', '/api/auth/department/addOrEdit', 'departmentManage', '部门管理', '新增/编辑', 'action', '新增/编辑', 99101, '', 'addOrEdit', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.796007', '2026-03-22 17:11:25.394661', 0);
+INSERT INTO `auth_resource` VALUES ('dictDisable', '启用/禁用', '', '/api/bms/system/dict/disable', 'dictManage', '字典管理', '启用/禁用', 'action', '启用/禁用', 99403, '', 'disable', 2, '', 0, 'systemSetting', 'all', 'all', '2026-03-22 15:40:07.82101', '2026-03-22 17:11:25.411825', 0);
+INSERT INTO `auth_resource` VALUES ('orderRefundManage', '退款管理', '', '/api/bms/order/refund/queryPage', 'orderManage', '订单管理', '退款管理', 'menu', '退款管理', 10700, '/order/refund', '', 2, '', 0, 'orderManage', 'all', 'all', '2026-03-22 15:40:07.829008', '2026-03-22 17:11:25.442177', 0);
+INSERT INTO `auth_resource` VALUES ('goodsInfoManage', '商品管理', '', '/api/bms/commodity/goods/queryPage', 'commodityManage', '商品管理', '商品管理', 'menu', '商品管理', 11200, '/commodity/goods', '', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.840959', '2026-03-22 17:11:25.457761', 0);
+INSERT INTO `auth_resource` VALUES ('dictManage', '字典管理', '', '/api/bms/system/dict/queryPage', 'systemSetting', '系统设置', '字典管理', 'menu', '字典管理', 99400, '/system/dict', '', 2, '', 0, 'systemSetting', 'all', 'all', '2026-03-22 15:40:07.84296', '2026-03-22 17:11:25.47145', 0);
+INSERT INTO `auth_resource` VALUES ('userInfoManage', '用户管理', '', '/api/bms/customer/user/queryPage', 'customerManage', '会员管理', '用户管理', 'menu', '用户管理', 81100, '/customer/user', '', 2, '', 0, 'customerManage', 'all', 'all', '2026-03-22 15:40:07.848959', '2026-03-22 17:11:25.501101', 0);
+INSERT INTO `auth_resource` VALUES ('employeeAddOrEdit', '新增/编辑员工', '', '/api/auth/employee/addOrEdit', 'employeeManage', '员工管理', '新增/编辑', 'action', '新增/编辑员工', 99301, '', 'addOrEdit', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.853961', '2026-03-22 17:11:25.532034', 0);
+INSERT INTO `auth_resource` VALUES ('roleDisable', '启用/禁用角色', '', '/api/auth/role/disable', 'roleManage', '角色管理', '启用/禁用', 'action', '启用/禁用角色', 99203, '', 'disable', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.859962', '2026-03-22 17:11:25.543515', 0);
+INSERT INTO `auth_resource` VALUES ('userInfoDisable', '启用/禁用', '', '/api/bms/customer/user/disable', 'userInfoManage', '会员管理', '启用/禁用', 'action', '启用/禁用', 81103, '', 'disable', 2, '', 0, 'customerManage', 'all', 'all', '2026-03-22 15:40:07.87681', '2026-03-22 17:11:25.587854', 0);
+INSERT INTO `auth_resource` VALUES ('orderManage', '订单管理', '', NULL, NULL, NULL, '订单管理', 'menu', '订单管理', 71000, '/order', NULL, 2, NULL, 1, 'orderManage', 'all', NULL, '2026-03-22 15:40:07.882812', '2026-03-22 17:11:25.597443', 0);
+INSERT INTO `auth_resource` VALUES ('authManage', '权限管理', '', NULL, NULL, NULL, '权限管理', 'menu', '权限管理', 99000, '/auth', NULL, 2, NULL, 1, 'authManage', 'all', NULL, '2026-03-22 15:40:07.89381', '2026-03-22 17:11:25.608597', 0);
+INSERT INTO `auth_resource` VALUES ('roleDelete', '删除角色', '', '/api/auth/role/delete', 'roleManage', '角色管理', '删除', 'action', '删除角色', 99202, '', 'delete', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.746006', '2026-03-22 17:11:25.667483', 0);
+INSERT INTO `auth_resource` VALUES ('merchantDelete', '删除', '', '/api/bms/businesses/merchant/delete', 'merchantManage', '商户管理', '删除', 'action', '删除', 71202, '', 'delete', 2, '', 0, 'businessesSetting', 'all', 'all', '2026-03-22 15:40:07.755008', '2026-03-22 17:11:25.677266', 0);
+INSERT INTO `auth_resource` VALUES ('dictAddOrEdit', '新增/编辑', '', '/api/bms/system/dict/addOrEdit', 'dictManage', '字典管理', '新增/编辑', 'action', '新增/编辑', 99401, '', 'addOrEdit', 2, '', 0, 'systemSetting', 'all', 'all', '2026-03-22 15:40:07.76001', '2026-03-22 17:11:25.694312', 0);
+INSERT INTO `auth_resource` VALUES ('goodsSpuConfigAddOrEdit', '新增/编辑', '', '/api/bms/commodity/spu/addOrEdit', 'goodsSpuConfigManage', 'SPU配置', '新增/编辑', 'action', '新增/编辑', 11101, '', 'addOrEdit', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.769008', '2026-03-22 17:11:25.703817', 0);
+INSERT INTO `auth_resource` VALUES ('merchantAddOrEdit', '新增/编辑', '', '/api/bms/businesses/merchant/addOrEdit', 'merchantManage', '商户管理', '新增/编辑', 'action', '新增/编辑', 71201, '', 'addOrEdit', 2, '', 0, 'businessesSetting', 'all', 'all', '2026-03-22 15:40:07.786007', '2026-03-22 17:11:25.721927', 0);
+INSERT INTO `auth_resource` VALUES ('departmentDisable', '启用/禁用部门', '', '/api/auth/department/disable', 'departmentManage', '部门管理', '启用/禁用', 'action', '启用/禁用部门', 99102, '', 'disable', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.791009', '2026-03-22 17:11:25.730579', 0);
+INSERT INTO `auth_resource` VALUES ('roleGrantResource', '角色分配资源', '', '/api/auth/role/grant', 'roleManage', '角色管理', '分配资源', 'action', '角色分配资源', 99204, '', 'grant', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.799007', '2026-03-22 17:11:25.750273', 0);
+INSERT INTO `auth_resource` VALUES ('commodityManage', '商品管理', '', NULL, NULL, NULL, '商品管理', 'menu', '商品管理', 81000, '/commodity', NULL, 2, NULL, 1, 'commodityManage', 'all', NULL, '2026-03-22 15:40:07.803009', '2026-03-22 17:11:25.759497', 0);
+INSERT INTO `auth_resource` VALUES ('orderInfoDelete', '删除', '', '/api/bms/order/info/delete', 'orderInfoManage', '订单管理', '删除', 'action', '删除', 10102, '', 'delete', 2, '', 0, 'orderManage', 'all', 'all', '2026-03-22 15:40:07.807009', '2026-03-22 17:11:25.79032', 0);
+INSERT INTO `auth_resource` VALUES ('userInfoAddOrEdit', '新增/编辑', '', '/api/bms/customer/user/addOrEdit', 'userInfoManage', '会员管理', '新增/编辑', 'action', '新增/编辑', 81101, '', 'addOrEdit', 2, '', 0, 'customerManage', 'all', 'all', '2026-03-22 15:40:07.810009', '2026-03-22 17:11:25.799401', 0);
+INSERT INTO `auth_resource` VALUES ('orderRefundAddOrEdit', '新增/编辑', '', '/api/bms/order/refund/addOrEdit', 'orderRefundManage', '退款管理', '新增/编辑', 'action', '新增/编辑', 10701, '', 'addOrEdit', 2, '', 0, 'orderManage', 'all', 'all', '2026-03-22 15:40:07.813008', '2026-03-22 17:11:25.809601', 0);
+INSERT INTO `auth_resource` VALUES ('goodsInfoAddOrEdit', '新增/编辑', '', '/api/bms/commodity/goods/addOrEdit', 'goodsInfoManage', '商品管理', '新增/编辑', 'action', '新增/编辑', 11201, '', 'addOrEdit', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.825006', '2026-03-22 17:11:25.83762', 0);
+INSERT INTO `auth_resource` VALUES ('goodsSpuConfigDelete', '删除', '', '/api/bms/commodity/spu/delete', 'goodsSpuConfigManage', 'SPU配置', '删除', 'action', '删除', 11102, '', 'delete', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.831007', '2026-03-22 17:11:25.896278', 0);
+INSERT INTO `auth_resource` VALUES ('employeeDelete', '删除员工', '', '/api/auth/employee/delete', 'employeeManage', '员工管理', '删除', 'action', '删除员工', 99302, '', 'delete', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.834005', '2026-03-22 17:11:25.918495', 0);
+INSERT INTO `auth_resource` VALUES ('roleManage', '角色管理', '', '/api/auth/role/queryPage', 'authManage', '权限管理', '角色管理', 'menu', '角色管理', 99200, '/auth/role', '', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.837907', '2026-03-22 17:11:25.945992', 0);
+INSERT INTO `auth_resource` VALUES ('orderRefundDelete', '删除', '', '/api/bms/order/refund/delete', 'orderRefundManage', '退款管理', '删除', 'action', '删除', 10702, '', 'delete', 2, '', 0, 'orderManage', 'all', 'all', '2026-03-22 15:40:07.846959', '2026-03-22 17:11:25.976093', 0);
+INSERT INTO `auth_resource` VALUES ('departmentManage', '部门管理', '', '/api/auth/department/queryPage', 'authManage', '权限管理', '部门管理', 'menu', '部门管理', 99100, '/auth/department', '', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.856961', '2026-03-22 17:11:26.01642', 0);
+INSERT INTO `auth_resource` VALUES ('systemSetting', '系统设置', '', NULL, NULL, NULL, '系统设置', 'menu', '系统设置', 99000, '/system', NULL, 2, NULL, 1, 'systemSetting', 'all', NULL, '2026-03-22 15:40:07.86396', '2026-03-22 17:11:26.02948', 0);
+INSERT INTO `auth_resource` VALUES ('userInfoDelete', '删除', '', '/api/bms/customer/user/delete', 'userInfoManage', '会员管理', '删除', 'action', '删除', 81102, '', 'delete', 2, '', 0, 'customerManage', 'all', 'all', '2026-03-22 15:40:07.869431', '2026-03-22 17:11:26.043625', 0);
+INSERT INTO `auth_resource` VALUES ('dictDelete', '删除', '', '/api/bms/system/dict/delete', 'dictManage', '字典管理', '删除', 'action', '删除', 99402, '', 'delete', 2, '', 0, 'systemSetting', 'all', 'all', '2026-03-22 15:40:07.873222', '2026-03-22 17:11:26.084004', 0);
+INSERT INTO `auth_resource` VALUES ('orderInfoManage', '订单管理', '', '/api/bms/order/info/queryPage', 'orderManage', '订单管理', '订单管理', 'menu', '订单管理', 10100, '/order/order', '', 2, '', 0, 'orderManage', 'all', 'all', '2026-03-22 15:40:07.889812', '2026-03-22 17:11:26.101961', 0);
+INSERT INTO `auth_resource` VALUES ('businessesManage', '商超管理', '', NULL, NULL, NULL, '商超管理', 'menu', '商超管理', 71000, '/businesses', NULL, 2, NULL, 1, 'businessesSetting', 'all', NULL, '2026-03-22 15:40:07.774007', '2026-03-22 17:11:25.325031', 0);
+INSERT INTO `auth_resource` VALUES ('employeeDisable', '启用/禁用员工', '', '/api/auth/employee/disable', 'employeeManage', '员工管理', '启用/禁用', 'action', '启用/禁用员工', 99303, '', 'disable', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.778009', '2026-03-22 17:11:25.334038', 0);
+INSERT INTO `auth_resource` VALUES ('tagDisable', '启用/禁用', '', '/api/bms/base/tag/disable', 'tagManage', '标签管理', '启用/禁用', 'action', '启用/禁用', 98503, '', 'disable', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.261778', '2026-03-22 17:11:25.713058', 0);
+INSERT INTO `auth_resource` VALUES ('groupDelete', '删除', '', '/api/bms/base/group/delete', 'groupManage', '分组管理', '删除', 'action', '删除', 98302, '', 'delete', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.362414', '2026-03-22 17:11:25.850656', 0);
+INSERT INTO `auth_resource` VALUES ('tagManage', '标签管理', '', '/api/bms/base/tag/queryPage', 'baseSetting', '基础设置', '标签管理', 'menu', '标签管理', 98500, '/base/tag', '', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.506289', '2026-03-22 17:11:26.21581', 0);
+INSERT INTO `auth_resource` VALUES ('goodsInfoDelete', '删除', '', '/api/bms/commodity/goods/delete', 'goodsInfoManage', '商品管理', '删除', 'action', '删除', 11202, '', 'delete', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.91981', '2026-03-22 17:11:26.270987', 0);
+INSERT INTO `auth_resource` VALUES ('brandDisable', '启用/禁用', '', '/api/bms/base/brand/disable', 'brandManage', '品牌管理', '启用/禁用', 'action', '启用/禁用', 98203, '', 'disable', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:36.756331', '2026-03-22 17:11:25.292177', 0);
+INSERT INTO `auth_resource` VALUES ('brandManage', '品牌管理', '', '/api/bms/base/brand/queryPage', 'baseSetting', '基础设置', '品牌管理', 'menu', '品牌管理', 98200, '/base/brand', '', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:36.764383', '2026-03-22 17:11:25.305179', 0);
+INSERT INTO `auth_resource` VALUES ('departmentDelete', '删除部门', '', '/api/auth/department/delete', 'departmentManage', '部门管理', '删除', 'action', '删除部门', 99102, '', 'delete', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.764007', '2026-03-22 17:11:25.315032', 0);
+INSERT INTO `auth_resource` VALUES ('categoryAddOrEdit', '新增/编辑', '', '/api/bms/base/category/addOrEdit', 'categoryManage', '分类管理', '新增/编辑', 'action', '新增/编辑', 98401, '', 'addOrEdit', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:36.995147', '2026-03-22 17:11:25.427022', 0);
+INSERT INTO `auth_resource` VALUES ('groupDisable', '启用/禁用', '', '/api/bms/base/group/disable', 'groupManage', '分组管理', '启用/禁用', 'action', '启用/禁用', 98303, '', 'disable', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.041691', '2026-03-22 17:11:25.487479', 0);
+INSERT INTO `auth_resource` VALUES ('tagDelete', '批量删除', '', '/api/bms/base/tag/delete', 'tagManage', '标签管理', '批量删除', 'action', '批量删除', 98502, '', 'delete', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.059691', '2026-03-22 17:11:25.517989', 0);
+INSERT INTO `auth_resource` VALUES ('bannerDelete', '删除', '', '/api/bms/operation/banner/delete', 'bannerManage', 'Banner管理', '删除', 'action', '删除', 18102, '', 'delete', 2, '', 0, 'operationSetting', 'all', 'all', '2026-03-22 15:59:37.092691', '2026-03-22 17:11:25.553397', 0);
+INSERT INTO `auth_resource` VALUES ('baseSetting', '基础设置', '', NULL, NULL, NULL, '基础设置', 'menu', '基础设置', 98000, '/base', NULL, 2, NULL, 1, 'baseSetting', 'all', NULL, '2026-03-22 15:59:37.098692', '2026-03-22 17:11:25.563792', 0);
+INSERT INTO `auth_resource` VALUES ('groupManage', '分组管理', '', '/api/bms/base/group/queryPage', 'baseSetting', '基础设置', '分组管理', 'menu', '分组管理', 98300, '/base/group', '', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.105692', '2026-03-22 17:11:25.577188', 0);
+INSERT INTO `auth_resource` VALUES ('brandDelete', '删除', '', '/api/bms/base/brand/delete', 'brandManage', '品牌管理', '删除', 'action', '删除', 98202, '', 'delete', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.170627', '2026-03-22 17:11:25.6198', 0);
+INSERT INTO `auth_resource` VALUES ('brandAddOrEdit', '新增/编辑', '', '/api/bms/base/brand/addOrEdit', 'brandManage', '品牌管理', '新增/编辑', 'action', '新增/编辑', 98201, '', 'addOrEdit', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.175627', '2026-03-22 17:11:25.630417', 0);
+INSERT INTO `auth_resource` VALUES ('merchantManage', '商户管理', '', '/api/bms/businesses/merchant/queryPage', 'businessesManage', '商超管理', '商户管理', 'menu', '商户管理', 71200, '/businesses/merchant', '', 2, '', 0, 'businessesSetting', 'all', 'all', '2026-03-22 15:40:07.90581', '2026-03-22 17:11:25.640402', 0);
+INSERT INTO `auth_resource` VALUES ('tagAddOrEdit', '新增/编辑', '', '/api/bms/base/tag/addOrEdit', 'tagManage', '标签管理', '新增/编辑', 'action', '新增/编辑', 98501, '', 'addOrEdit', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.200627', '2026-03-22 17:11:25.650119', 0);
+INSERT INTO `auth_resource` VALUES ('customerManage', '会员管理', '', NULL, NULL, NULL, '会员管理', 'menu', '会员管理', 81000, '/customer', NULL, 2, NULL, 1, 'customerManage', 'all', NULL, '2026-03-22 15:40:07.923812', '2026-03-22 17:11:25.658071', 0);
+INSERT INTO `auth_resource` VALUES ('operationSetting', '运营管理', '', NULL, NULL, NULL, '运营管理', 'menu', '运营管理', 18000, '/operation', NULL, 2, NULL, 1, 'operationSetting', 'all', NULL, '2026-03-22 15:59:37.239627', '2026-03-22 17:11:25.684719', 0);
+INSERT INTO `auth_resource` VALUES ('bannerAddOrEdit', '新增/编辑', '', '/api/bms/operation/banner/addOrEdit', 'bannerManage', 'Banner管理', '新增/编辑', 'action', '新增/编辑', 18101, '', 'addOrEdit', 2, '', 0, 'operationSetting', 'all', 'all', '2026-03-22 15:59:37.287298', '2026-03-22 17:11:25.741214', 0);
+INSERT INTO `auth_resource` VALUES ('goodsInfoSaleFlag', '商品上下架', '', '/api/bms/commodity/goods/saleFlag', 'goodsInfoManage', '商品管理', '商品上下架', 'action', '商品上下架', 11203, '', 'saleFlag', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.817008', '2026-03-22 17:11:25.819642', 0);
+INSERT INTO `auth_resource` VALUES ('bannerManage', 'Banner管理', '', '/api/bms/operation/banner/queryPage', 'operationSetting', '运营管理', 'Banner管理', 'menu', 'Banner管理', 18100, '/operation/banner', '', 2, '', 0, 'operationSetting', 'all', 'all', '2026-03-22 15:59:37.364956', '2026-03-22 17:11:25.87275', 0);
+INSERT INTO `auth_resource` VALUES ('categoryManage', '分类管理', '', '/api/bms/base/category/queryPage', 'baseSetting', '基础设置', '分类管理', 'menu', '分类管理', 98400, '/base/category', '', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.408972', '2026-03-22 17:11:25.996846', 0);
+INSERT INTO `auth_resource` VALUES ('groupAddOrEdit', '新增/编辑', '', '/api/bms/base/group/addOrEdit', 'groupManage', '分组管理', '新增/编辑', 'action', '新增/编辑', 98301, '', 'addOrEdit', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.435551', '2026-03-22 17:11:26.056608', 0);
+INSERT INTO `auth_resource` VALUES ('bannerDisable', '启用/禁用', '', '/api/bms/operation/banner/disable', 'bannerManage', 'Banner管理', '启用/禁用', 'action', '启用/禁用', 18103, '', 'disable', 2, '', 0, 'operationSetting', 'all', 'all', '2026-03-22 15:59:37.439551', '2026-03-22 17:11:26.071655', 0);
+INSERT INTO `auth_resource` VALUES ('categoryDelete', '删除', '', '/api/bms/base/category/delete', 'categoryManage', '分类管理', '删除', 'action', '删除', 98402, '', 'delete', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.45955', '2026-03-22 17:11:26.120757', 0);
+INSERT INTO `auth_resource` VALUES ('roleAddOrEdit', '新增/编辑角色', '', '/api/auth/role/addOrEdit', 'roleManage', '角色管理', '新增/编辑', 'action', '新增/编辑角色', 99201, '', 'addOrEdit', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.896814', '2026-03-22 17:11:26.1349', 0);
+INSERT INTO `auth_resource` VALUES ('employeeManage', '员工管理', '', '/api/auth/employee/queryPage', 'authManage', '权限管理', '员工管理', 'menu', '员工管理', 99300, '/auth/employee', '', 2, '', 0, 'authManage', 'all', 'all', '2026-03-22 15:40:07.902812', '2026-03-22 17:11:26.149128', 0);
+INSERT INTO `auth_resource` VALUES ('categoryDisable', '启用/禁用', '', '/api/bms/base/category/disable', 'categoryManage', '分类管理', '启用/禁用', 'action', '启用/禁用', 98403, '', 'disable', 2, '', 0, 'baseSetting', 'all', 'all', '2026-03-22 15:59:37.482189', '2026-03-22 17:11:26.186728', 0);
+INSERT INTO `auth_resource` VALUES ('merchantDisable', '启用/禁用', '', '/api/bms/businesses/merchant/disable', 'merchantManage', '商户管理', '启用/禁用', 'action', '启用/禁用', 71203, '', 'disable', 2, '', 0, 'businessesSetting', 'all', 'all', '2026-03-22 15:40:07.90981', '2026-03-22 17:11:26.240239', 0);
+INSERT INTO `auth_resource` VALUES ('goodsSpuConfigManage', 'SPU配置', '', '/api/bms/commodity/spu/queryPage', 'commodityManage', '商品管理', 'SPU配置', 'menu', 'SPU配置', 11100, '/commodity/spu', '', 2, '', 0, 'commodityManage', 'all', 'all', '2026-03-22 15:40:07.91281', '2026-03-22 17:11:26.255896', 0);
 /*!40000 ALTER TABLE `auth_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -182,7 +247,7 @@ CREATE TABLE `auth_role` (
 
 LOCK TABLES `auth_role` WRITE;
 /*!40000 ALTER TABLE `auth_role` DISABLE KEYS */;
-INSERT INTO `auth_role` VALUES ('596bf1f03e28b22d4f5c09963e0d8f21','开发者',0,'系统开发所需的测试权限',NULL,NULL,1,'platform',NULL,NULL,NULL,NULL,NULL,'2026-03-22 09:53:53','2026-03-22 09:53:53',0);
+INSERT INTO `auth_role` VALUES ('873ced170e0b867c7a343cc738862355','开发者',0,'系统开发所需的测试权限',NULL,NULL,1,'platform',NULL,NULL,NULL,NULL,NULL,'2026-03-22 15:26:30.114206','2026-03-22 15:26:30.114206',0);
 /*!40000 ALTER TABLE `auth_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -432,36 +497,77 @@ LOCK TABLES `base_tag` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `goods_cart_item`
+-- Table structure for table `container_info`
 --
 
-DROP TABLE IF EXISTS `goods_cart_item`;
+DROP TABLE IF EXISTS `container_info`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `goods_cart_item` (
-  `cart_item_id` varchar(50) NOT NULL COMMENT '购物车项ID',
-  `user_id` varchar(50) DEFAULT NULL COMMENT '用户ID',
-  `merchant_id` varchar(50) DEFAULT NULL COMMENT '商家ID',
-  `goods_id` varchar(50) DEFAULT NULL COMMENT '商品ID',
-  `goods_name` varchar(50) DEFAULT NULL COMMENT '商品名称',
-  `goods_sku_id` varchar(50) DEFAULT NULL COMMENT 'SKU ID',
-  `goods_sku_name` varchar(100) DEFAULT NULL COMMENT 'SKU名称',
-  `cover_img` varchar(200) DEFAULT NULL COMMENT '商品图片',
-  `sale_price` decimal(10,2) DEFAULT NULL COMMENT '商品单价',
-  `count` int DEFAULT '0' COMMENT '数量',
-  `insert_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '插入时间',
-  `last_update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
-  PRIMARY KEY (`cart_item_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='购物车';
+CREATE TABLE `container_info` (
+  `container_id` varchar(50) NOT NULL COMMENT '货柜ID',
+  `container_code` varchar(50) DEFAULT NULL COMMENT '货柜编号',
+  `container_name` varchar(100) DEFAULT NULL COMMENT '货柜名称',
+  `province` varchar(50) DEFAULT NULL COMMENT '省',
+  `city` varchar(50) DEFAULT NULL COMMENT '市',
+  `area` varchar(50) DEFAULT NULL COMMENT '区',
+  `address` varchar(200) DEFAULT NULL COMMENT '详细地址',
+  `address_info` varchar(500) DEFAULT NULL COMMENT '货柜完整地址',
+  `grid_count` int DEFAULT NULL COMMENT '货柜格子数量',
+  `longitude` varchar(50) DEFAULT NULL COMMENT '经度',
+  `latitude` varchar(50) DEFAULT NULL COMMENT '纬度',
+  `forbidden_flag` smallint NOT NULL DEFAULT '0' COMMENT '禁用状态 0可用，1禁用',
+  `merchant_id` varchar(50) DEFAULT NULL COMMENT '门店ID',
+  `merchant_name` varchar(200) DEFAULT NULL COMMENT '门店名称',
+  `agent_id` varchar(50) DEFAULT NULL COMMENT '代理商ID',
+  `agent_name` varchar(200) DEFAULT NULL COMMENT '代理商名称',
+  `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '插入时间',
+  `last_update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  `deleted` smallint NOT NULL DEFAULT '0' COMMENT '删除标记，0否 1是',
+  PRIMARY KEY (`container_id`),
+  UNIQUE KEY `uk_container_info_container_code` (`container_code`),
+  KEY `idx_container_info_agent_id` (`agent_id`),
+  KEY `idx_container_info_deleted` (`deleted`),
+  KEY `idx_container_info_merchant_id` (`merchant_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='货柜信息';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `goods_cart_item`
+-- Dumping data for table `container_info`
 --
 
-LOCK TABLES `goods_cart_item` WRITE;
-/*!40000 ALTER TABLE `goods_cart_item` DISABLE KEYS */;
-/*!40000 ALTER TABLE `goods_cart_item` ENABLE KEYS */;
+LOCK TABLES `container_info` WRITE;
+/*!40000 ALTER TABLE `container_info` DISABLE KEYS */;
+/*!40000 ALTER TABLE `container_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `container_merchant`
+--
+
+DROP TABLE IF EXISTS `container_merchant`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `container_merchant` (
+  `container_merchant_id` varchar(50) NOT NULL COMMENT '货柜和商户关联信息ID',
+  `merchant_id` varchar(50) DEFAULT NULL COMMENT '商户Id',
+  `merchant_name` varchar(200) DEFAULT NULL COMMENT '商户名称',
+  `container_id` varchar(50) DEFAULT NULL COMMENT '货柜Id',
+  `container_name` varchar(200) DEFAULT NULL COMMENT '货柜名称',
+  `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '插入时间',
+  `last_update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`container_merchant_id`),
+  KEY `idx_container_merchant_container_id` (`container_id`),
+  KEY `idx_container_merchant_merchant_id` (`merchant_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='货柜和商户关联表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `container_merchant`
+--
+
+LOCK TABLES `container_merchant` WRITE;
+/*!40000 ALTER TABLE `container_merchant` DISABLE KEYS */;
+/*!40000 ALTER TABLE `container_merchant` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -537,7 +643,7 @@ CREATE TABLE `goods_info` (
   `sku_type` int DEFAULT '2' COMMENT '规格类型 1单一规格 2多规格',
   `used_flag` int DEFAULT '0' COMMENT '二手标签 0否 1是',
   `sale_type` int DEFAULT '1' COMMENT '销售模式 1现货销售 2预售模式',
-  `distribution_type` int DEFAULT '1' COMMENT '配送方式 0：自提，1：快递，2：都可以 99：送到货柜',
+  `distribution_type` int DEFAULT '1' COMMENT '配送方式 0：自提，1：快递，2：都可以',
   `credit_flag` int DEFAULT '1' COMMENT '是否支持积分支付（0：否，1：是）',
   `balance_flag` int DEFAULT '1' COMMENT '是否支持余额支付（0：否，1：是）',
   `total_stock` int DEFAULT '0' COMMENT '总库存',
@@ -732,6 +838,85 @@ CREATE TABLE `goods_stock_log` (
 LOCK TABLES `goods_stock_log` WRITE;
 /*!40000 ALTER TABLE `goods_stock_log` DISABLE KEYS */;
 /*!40000 ALTER TABLE `goods_stock_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `login_cache`
+--
+
+DROP TABLE IF EXISTS `login_cache`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `login_cache` (
+  `login_cache_id` varchar(64) NOT NULL COMMENT 'ID，应用生成的UUID',
+  `login_token` varchar(255) NOT NULL COMMENT '登录Token',
+  `user_id` varchar(64) NOT NULL COMMENT '用户ID',
+  `type` varchar(32) NOT NULL COMMENT '账号类型（platform、customer等）',
+  `user_data` text COMMENT '用户登录数据',
+  `user_auth` text COMMENT '用户权限',
+  `expire_time` datetime(6) NOT NULL COMMENT '过期时间',
+  `insert_time` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '插入时间',
+  `last_update_time` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6) COMMENT '最后更新时间',
+  PRIMARY KEY (`login_cache_id`),
+  UNIQUE KEY `uk_login_cache_login_token` (`login_token`),
+  KEY `idx_login_cache_expire_time` (`expire_time`),
+  KEY `idx_login_cache_user_type` (`user_id`,`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='登录缓存表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `login_cache`
+--
+
+LOCK TABLES `login_cache` WRITE;
+/*!40000 ALTER TABLE `login_cache` DISABLE KEYS */;
+/*!40000 ALTER TABLE `login_cache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `login_record`
+--
+
+DROP TABLE IF EXISTS `login_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `login_record` (
+  `login_record_id` varchar(64) NOT NULL COMMENT 'ID，应用生成的UUID',
+  `user_id` varchar(64) NOT NULL COMMENT '用户ID',
+  `phone` varchar(32) DEFAULT NULL COMMENT '手机号',
+  `account` varchar(128) DEFAULT NULL COMMENT '账号',
+  `type` varchar(32) NOT NULL COMMENT '账号类型（platform、customer等）',
+  `last_login_time` datetime(6) DEFAULT NULL COMMENT '上次登录时间',
+  `login_time` datetime(6) NOT NULL COMMENT '登录时间',
+  `expire_time` datetime(6) DEFAULT NULL COMMENT '过期时间',
+  `login_ip` varchar(45) DEFAULT NULL COMMENT '登录IP，兼容IPv4和IPv6',
+  `device_info` varchar(512) DEFAULT NULL COMMENT '设备信息',
+  `ip_location` varchar(255) DEFAULT NULL COMMENT 'IP所属地',
+  `fail_count` int NOT NULL DEFAULT '0' COMMENT '失败次数',
+  `client_type` varchar(32) DEFAULT NULL COMMENT '登录客户端类型（APP、WEB）',
+  `login_token` varchar(255) NOT NULL COMMENT '登录Token',
+  `insert_time` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '插入时间',
+  `last_update_time` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6) COMMENT '最后更新时间',
+  `deleted` smallint NOT NULL DEFAULT '0' COMMENT '逻辑删除标志（0：正常，1：已删除）',
+  PRIMARY KEY (`login_record_id`),
+  UNIQUE KEY `uk_login_record_login_token` (`login_token`),
+  KEY `idx_login_record_account_type` (`account`,`type`),
+  KEY `idx_login_record_deleted_time` (`deleted`,`login_time`),
+  KEY `idx_login_record_expire_time` (`expire_time`),
+  KEY `idx_login_record_phone_type` (`phone`,`type`),
+  KEY `idx_login_record_user_type_time` (`user_id`,`type`,`login_time`),
+  CONSTRAINT `chk_login_record_deleted` CHECK (`deleted` IN (0,1)),
+  CONSTRAINT `chk_login_record_fail_count` CHECK (`fail_count` >= 0)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='登录记录表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `login_record`
+--
+
+LOCK TABLES `login_record` WRITE;
+/*!40000 ALTER TABLE `login_record` DISABLE KEYS */;
+/*!40000 ALTER TABLE `login_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1274,6 +1459,51 @@ LOCK TABLES `order_refund_goods` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `pay_record`
+--
+
+DROP TABLE IF EXISTS `pay_record`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pay_record` (
+  `pay_record_id` varchar(50) NOT NULL COMMENT '支付记录ID',
+  `order_no` varchar(64) DEFAULT NULL COMMENT '订单编号',
+  `user_id` varchar(64) DEFAULT NULL COMMENT '用户ID',
+  `third_account` varchar(64) DEFAULT NULL COMMENT '用户第三方账号(如openid)',
+  `pay_type` varchar(20) DEFAULT NULL COMMENT '支付类型(WECHAT/ALIPAY)',
+  `pay_detail_type` varchar(20) DEFAULT NULL COMMENT '支付详情类型(JSAPI/APP/H5/NATIVE)',
+  `trade_type` varchar(20) DEFAULT NULL COMMENT '交易类型 Mall-商城订单 Credit-积分充值 Balance-余额充值 Member-会员续费',
+  `actual_pay_amount` decimal(16,2) DEFAULT NULL COMMENT '实际支付金额',
+  `total_fee` int DEFAULT NULL COMMENT '支付金额(分)',
+  `pay_status` int DEFAULT NULL COMMENT '支付状态 0 待支付 1 支付中 2 支付成功 3 已取消 4 支付失败',
+  `transaction_id` varchar(64) DEFAULT NULL COMMENT '微信/支付宝交易号',
+  `prepay_id` varchar(64) DEFAULT NULL COMMENT '预支付交易会话标识',
+  `pay_time` datetime DEFAULT NULL COMMENT '支付时间',
+  `notify_data` text COMMENT '回调原始数据',
+  `fail_reason` varchar(255) DEFAULT NULL COMMENT '失败原因',
+  `record_type` varchar(20) DEFAULT NULL COMMENT '记录类型 PAY-支付 REFUND-退款',
+  `refund_no` varchar(64) DEFAULT NULL COMMENT '退款单号',
+  `refund_id` varchar(64) DEFAULT NULL COMMENT '微信退款单号',
+  `create_by` varchar(64) DEFAULT '' COMMENT '创建者',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_by` varchar(64) DEFAULT '' COMMENT '更新者',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `del_flag` char(1) DEFAULT '0' COMMENT '删除标志（0代表存在 2代表删除）',
+  PRIMARY KEY (`pay_record_id`),
+  KEY `idx_pay_record_order_no` (`order_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='支付记录表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pay_record`
+--
+
+LOCK TABLES `pay_record` WRITE;
+/*!40000 ALTER TABLE `pay_record` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pay_record` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sys_dict`
 --
 
@@ -1281,19 +1511,19 @@ DROP TABLE IF EXISTS `sys_dict`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_dict` (
-  `dict_id` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '瀛楀吀ID',
-  `dict_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '瀛楀吀鍚嶇О',
-  `dict_code` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '瀛楀吀缂栫爜',
-  `module_name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '妯″潡鍚嶇О',
-  `dict_describe` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '瀛楀吀鎻忚堪',
-  `forbidden_flag` int DEFAULT '0' COMMENT '绂佺敤鐘舵? 0鍙?敤锛?绂佺敤',
-  `insert_time` datetime DEFAULT NULL COMMENT '鎻掑叆鏃堕棿',
-  `last_update_time` datetime DEFAULT NULL COMMENT '鏈?悗鏇存柊鏃堕棿',
-  `deleted` int DEFAULT '0' COMMENT '閫昏緫鍒犻櫎鏍囪?',
+  `dict_id` varchar(64) NOT NULL COMMENT '字典ID',
+  `dict_name` varchar(100) NOT NULL COMMENT '字典名称',
+  `dict_code` varchar(100) NOT NULL COMMENT '字典编码',
+  `module_name` varchar(100) DEFAULT NULL COMMENT '模块名称',
+  `dict_describe` varchar(500) DEFAULT NULL COMMENT '字典描述',
+  `forbidden_flag` int DEFAULT '0' COMMENT '禁用状态 0可用，1禁用',
+  `insert_time` datetime DEFAULT NULL COMMENT '插入时间',
+  `last_update_time` datetime DEFAULT NULL COMMENT '最后更新时间',
+  `deleted` int DEFAULT '0' COMMENT '逻辑删除标记',
   PRIMARY KEY (`dict_id`),
   UNIQUE KEY `uk_dict_name` (`dict_name`),
   UNIQUE KEY `uk_dict_code` (`dict_code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='瀛楀吀琛';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='字典表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1302,6 +1532,7 @@ CREATE TABLE `sys_dict` (
 
 LOCK TABLES `sys_dict` WRITE;
 /*!40000 ALTER TABLE `sys_dict` DISABLE KEYS */;
+INSERT INTO `sys_dict` VALUES ('c639404c065af655f73eea9f319d7458','test','test001','test','test',0,'2026-03-22 16:54:13.268178','2026-03-22 16:54:13.268178',0);
 /*!40000 ALTER TABLE `sys_dict` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1313,17 +1544,17 @@ DROP TABLE IF EXISTS `sys_dict_item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `sys_dict_item` (
-  `dict_item_id` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '瀛楀吀椤笽D',
-  `dict_id` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '鍏宠仈鐨勫瓧鍏窱D',
-  `dict_key` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '瀛楀吀key',
-  `dict_value` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '瀛楀吀value',
-  `forbidden_flag` int DEFAULT '0' COMMENT '绂佺敤鐘舵? 0鍙?敤锛?绂佺敤',
-  `insert_time` datetime DEFAULT NULL COMMENT '鎻掑叆鏃堕棿',
-  `last_update_time` datetime DEFAULT NULL COMMENT '鏈?悗鏇存柊鏃堕棿',
-  `deleted` int DEFAULT '0' COMMENT '閫昏緫鍒犻櫎鏍囪?',
+  `dict_item_id` varchar(64) NOT NULL COMMENT '字典项ID',
+  `dict_id` varchar(64) NOT NULL COMMENT '关联的字典ID',
+  `dict_key` varchar(100) NOT NULL COMMENT '字典key',
+  `dict_value` varchar(500) DEFAULT NULL COMMENT '字典value',
+  `forbidden_flag` int DEFAULT '0' COMMENT '禁用状态 0可用，1禁用',
+  `insert_time` datetime DEFAULT NULL COMMENT '插入时间',
+  `last_update_time` datetime DEFAULT NULL COMMENT '最后更新时间',
+  `deleted` int DEFAULT '0' COMMENT '逻辑删除标记',
   PRIMARY KEY (`dict_item_id`),
   UNIQUE KEY `uk_dict_key` (`dict_key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='瀛楀吀椤硅〃';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='字典项表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1332,6 +1563,7 @@ CREATE TABLE `sys_dict_item` (
 
 LOCK TABLES `sys_dict_item` WRITE;
 /*!40000 ALTER TABLE `sys_dict_item` DISABLE KEYS */;
+INSERT INTO `sys_dict_item` VALUES ('fe0da424bf6d7de59f54fd2a1e4e47eb','c639404c065af655f73eea9f319d7458','fffff','ewww',0,'2026-03-22 16:54:24.771989','2026-03-22 16:54:24.771989',0);
 /*!40000 ALTER TABLE `sys_dict_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1600,4 +1832,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-22 17:56:18
+-- Synchronized with doc/sql/pgsql.sql on 2026-07-11
