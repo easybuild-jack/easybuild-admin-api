@@ -4,6 +4,8 @@
 
 本仓库不是业务系统，而是一个**可运行的后端样板**：它只包含一个 Spring Boot 启动类，所有业务能力（认证、用户、商品、订单、营销……）都通过 Maven 依赖以模块形式引入。它的作用是让 [easybuild-admin-front](https://github.com/easybuild-jack/easybuild-admin-front) 这套前端脚手架能够连上真实接口、跑通完整的登录 / 菜单 / 权限 / CRUD 流程。
 
+> **仓库结构约定**：主干 `master` **只保留这份 README 作为项目导航，不存放任何代码**。所有代码按框架版本分布在 `3.2.12`、`3.3.x` 等分支上。想跑起来，请先切到目标版本分支，见下文「版本与分支策略」。
+
 ---
 
 ## 这个项目解决什么问题
@@ -37,6 +39,8 @@
 
 **分支号 = EasyBuild 框架版本号。** 这是本仓库最重要的约定：
 
+- **主干 `master`：只有本文档，没有代码**，用于仓库首页展示与版本导航
+- **版本分支（如 `3.2.12`）：完整代码**，谁要跑项目就切到哪个分支
 - 分支 `3.2.12` 对应 EasyBuild `3.2.12` 版本
 - `pom.xml` 中的 `framework.version` 必须与分支号保持一致，它统一控制所有 `com.mcst` 依赖（`easyfk-dependencies`、`module-dependencies`）的版本
 - 框架发布新版本时，从当前分支拉出新版本号分支，并把 `framework.version` 改为对应版本
@@ -132,7 +136,7 @@ easybuild-admin-api/
 ```bash
 git clone https://github.com/easybuild-jack/easybuild-admin-api.git
 cd easybuild-admin-api
-# 按需切换到目标框架版本分支
+# master 只有 README，必须切到目标版本分支才能拿到代码
 git checkout 3.2.12
 ```
 
@@ -320,8 +324,8 @@ easyfk:
 
 ## 相关文档
 
-- [`doc/项目介绍.md`](doc/项目介绍.md) —— 逐项配置说明、模块细节、扩展指引
-- 启动类：`src/main/java/com/easybuild/admin/bms/ServerApp.java`
+- [`doc/项目介绍.md`](https://github.com/easybuild-jack/easybuild-admin-api/blob/3.2.12/doc/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D.md) —— 逐项配置说明、模块细节、扩展指引（位于 `3.2.12` 分支）
+- 启动类：`src/main/java/com/easybuild/admin/bms/ServerApp.java`（同样在各版本分支中）
 - EasyFK / EasyBuild 生态文档由框架侧维护，不在本仓库内
 
 ---
