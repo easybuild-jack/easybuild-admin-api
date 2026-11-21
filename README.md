@@ -26,14 +26,15 @@
 ```bash
 git clone https://github.com/easybuild-jack/easybuild-admin-api.git
 cd easybuild-admin-api
-# 主干只有 README，先切到需要的版本分支
-git checkout 3.2.12
+# 主干只有 README，先切到需要的版本分支（下表中最上面的是最新版）
+git checkout 3.5.16
 ```
 
-切到版本分支后，**按该分支根目录 `doc/项目介绍.md` 操作** —— 环境要求、数据库初始化、数据源配置、启动步骤、模块清单、切换数据库 / ORM、扩展模块等全部细节都在那份文档里。
+切到版本分支后，**按该分支的 `doc/项目介绍.md` 操作** —— 环境要求、数据库初始化、数据源配置、启动步骤、模块清单、切换数据库 / ORM、扩展模块等全部细节都在那份文档里。
 
 | 版本分支 | 框架版本 | 详细说明文档 |
 |----------|----------|--------------|
+| `3.5.16` | 3.5.16 | [doc/项目介绍.md](https://github.com/easybuild-jack/easybuild-admin-api/blob/3.5.16/doc/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D.md) |
 | `3.2.12` | 3.2.12 | [doc/项目介绍.md](https://github.com/easybuild-jack/easybuild-admin-api/blob/3.2.12/doc/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D.md) |
 
 ## 相关仓库
